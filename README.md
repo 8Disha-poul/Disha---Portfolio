@@ -16,4 +16,4 @@
 (Will be added after deployment)
 
 ## 📌 GitHub Repo
-https://github.com/YOUR_USERNAME/YOUR_REPO
+https://github.com/8Disha-poul/Disha---Portfolio.git
