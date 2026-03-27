@@ -1,0 +1,79 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: #0f0f0f;
+  padding: 20px 30px;
+  border-top: 1px solid #1f1f1f;
+}
+
+/* ===== CONTENT ===== */
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #7e1891;
+  font-size: 14px;
+}
+
+/* ===== ICONS CONTAINER ===== */
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== ICON LINKS ===== */
+.footer-icons a {
+  color: #ccc;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.footer-icons a:hover {
+  color: #7e1891;
+  transform: scale(1.2);
+}
+
+/* ===== PHONE ===== */
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    font-size: 12px;
+  }
+
+  .footer-icons a {
+    font-size: 16px;
+  }
+}

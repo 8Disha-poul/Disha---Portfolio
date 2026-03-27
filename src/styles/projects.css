@@ -1,0 +1,128 @@
+#projects {
+  padding: 80px 20px;
+  background: #0f0f0f;   /* dark theme */
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #7e1891;
+}
+.projects-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.project-card {
+  background: #1a1a1a;   /* dark card */
+  border-radius: 15px;
+  padding: 20px;
+
+  color: #e5e5e5;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+  transition: all 0.3s ease;
+  position: relative;
+}
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(126, 24, 145, 0.3);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  transition: 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.project-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.tech {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #7e1891;
+  font-weight: 500;
+}
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+
+  background: #7e1891;
+  color: white;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.buttons a:hover {
+  background: white;
+  color: #7e1891;
+}
+.featured {
+  border: 1px solid #7e1891;
+  transform: scale(1.02);
+}
+
+.featured::before {
+  content: "⭐ Featured";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: #7e1891;
+  color: white;
+
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  #projects h2 {
+    font-size: 26px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+}

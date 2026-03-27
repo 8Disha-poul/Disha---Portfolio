@@ -1,0 +1,131 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 40px;
+
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  color: #7e1891;
+  font-size: 22px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.logo span {
+  color: white;
+}
+
+.logo-icon {
+  font-size: 18px;
+  color: #7e1891;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== LINKS ===== */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  position: relative;
+  transition: 0.3s;
+}
+
+/* ===== ICON ===== */
+.nav-icon {
+  font-size: 14px;
+}
+
+/* ===== HOVER EFFECT ===== */
+.nav-links a:hover {
+  color: #7e1891;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #7e1891;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
